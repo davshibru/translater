@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">translator</string>
+
+    <string-array name="languageList">
+        <item>Руский</item>
+        <item>Английский</item>
+        <item>Кыргызский</item>
+        <item>Украинский</item>
+        <item>Французкий</item>
+        <item>Татарский</item>
+    </string-array>
+</resources>
