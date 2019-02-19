@@ -16,7 +16,7 @@
         <Spinner
             android:id="@+id/spinerFrom"
             android:layout_width="205dp"
-            android:background="#fff"
+            android:background="@drawable/field"
             android:layout_height="match_parent"
             android:entries="@array/languageList"
             android:outlineAmbientShadowColor="#fff">
@@ -27,7 +27,8 @@
             android:id="@+id/spinerTo"
             android:layout_width="205dp"
             android:layout_height="match_parent"
-            android:entries="@array/languageList">
+            android:entries="@array/languageList"
+            android:background="@drawable/field">
 
         </Spinner>
 
@@ -35,12 +36,16 @@
 
     <EditText
         android:id="@+id/word"
+        android:padding="25dp"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:hint="Введите текст"
-        android:textSize="25dp"
+        android:textSize="15dp"
         android:textColor="#000"
-        android:background="#DFDFED"
+        android:background="@drawable/field"
         />
 
     <Button
@@ -50,15 +55,23 @@
         android:layout_marginTop="25dp"
         android:layout_marginRight="50dp"
         android:onClick="OnButtonClick"
-        android:text="Перевести" />
-    <TextView
-        android:layout_width="match_parent"
-        android:textSize="25dp"
-        android:textColor="#000"
-        android:layout_marginTop="25dp"
-        android:layout_height="150dp"
-        android:id="@+id/textView"
-        android:background="#DFDFED"/>
+        android:text="Перевести"
+        android:background="@drawable/field"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp"
+            android:textColor="#000"
+            android:id="@+id/textView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/field"/>
+    </ScrollView>
 
 </LinearLayout>
